@@ -47,9 +47,6 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    background-image: url(https://t3.ftcdn.net/jpg/09/22/49/36/360_F_922493694_aEEWfaABJiCMgUAYFlw663kZQvKmMAC7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 0.4rem;
     position: relative;
 }
