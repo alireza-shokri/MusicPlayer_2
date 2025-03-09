@@ -312,7 +312,9 @@ function fanc_loop() {
 function fanc_heart_color() {
   if (left_heart.classList.contains("left_color_heart")) {
     left_heart.classList.remove("left_color_heart");
-    let inedex_remove = JSON.parse(localStorage.getItem("color_heart")).findIndex(iteam=> iteam = iteam_selected_id);
+    let inedex_remove = JSON.parse(
+      localStorage.getItem("color_heart")
+    ).findIndex((iteam) => (iteam = iteam_selected_id));
     array_heart.splice(inedex_remove, 1);
     localStorage.setItem("color_heart", JSON.stringify(array_heart));
     list_music_all[iteam_selected_id - 1].heart = "white";
@@ -536,11 +538,17 @@ left_icone_pause.addEventListener("click", () =>
 );
 
 left_icone_next.addEventListener("click", () =>
-  animat_click_btn(left_icone_next, !isSHuffled?fanc_next:fanc_original_shuffled)
+  animat_click_btn(
+    left_icone_next,
+    !isSHuffled ? fanc_next : fanc_original_shuffled
+  )
 );
 
 left_icone_previous.addEventListener("click", () =>
-  animat_click_btn(left_icone_previous, !isSHuffled?fanc_previous:fanc_original_shuffled)
+  animat_click_btn(
+    left_icone_previous,
+    !isSHuffled ? fanc_previous : fanc_original_shuffled
+  )
 );
 
 left_btn_playList.addEventListener("click", () =>
